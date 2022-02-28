@@ -1,0 +1,49 @@
+body {
+    background-color: deepskyblue;
+    text-align: center;
+}
+
+h1 {
+    color: darkslategray;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+nav {
+    color: cyan;
+    text-align: center;
+    font-size: large;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
