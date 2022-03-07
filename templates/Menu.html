@@ -17,9 +17,17 @@
         <a href="/Smile/templates/Contact.html"> Contact</a>
     </nav>
 </div>
-<script src="js/script.js"></script>
     <main>
-        __________________________
+        {% for product in products %}
+        <div class="product-box">
+            <h3>{{ products[0] }}</h3>
+            <p>{{ products[1] }}</p>
+            <p><strong>Volume: </strong>{{ products[2] }}</p>
+            <p><strong>Price: </strong>${{ products[4] }}</p>
+            <img src="static/images/{{ products[0] }}.jpg">
+        </div>
+        {% endfor %}
+
     </main>
 </body>
 
