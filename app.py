@@ -17,9 +17,9 @@ def create_connection(db_file):
     return None
 
 
-@app.route('/Home')
+@app.route('/')
 def render_homepage():
-    return render_template('home.html')
+    return render_template('Home.html')
 
 
 @app.route('/Menu')
@@ -36,12 +36,12 @@ def render_menu_page():
     product_list = cur.fetchall()
     con.close()
 
-    return render_template('menu.html', products=product_list)
+    return render_template('Menu.html', products=product_list)
 
 
 @app.route('/Contact')
 def render_contact_page():
-    return render_template('contact.html')
+    return render_template('Contact.html')
 
 
 app.run(host='0.0.0.0')

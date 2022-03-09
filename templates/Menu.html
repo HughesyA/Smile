@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Andrew's Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/Smile/static/Smile.css" >
+    <link rel="stylesheet" href="/static/Smile.css" >
 </head>
 
 <body>
@@ -12,9 +12,9 @@
     <h1>Andrew's Website</h1>
     <h2>Menu</h2>
     <nav>
-        <a href="/Smile/templates/Menu.html">Menu |</a>
-        <a href="/Smile/templates/Home.html"> Home |</a>
-        <a href="/Smile/templates/Contact.html"> Contact</a>
+        <a href="/Menu">Menu |</a>
+        <a href="/"> Home |</a>
+        <a href="/Contact"> Contact</a>
     </nav>
 </div>
     <main>
@@ -24,7 +24,7 @@
             <p>{{ products[1] }}</p>
             <p><strong>Volume: </strong>{{ products[2] }}</p>
             <p><strong>Price: </strong>${{ products[4] }}</p>
-            <img src="static/images/{{ products[0] }}.jpg">
+            <img src="/images/Flat White.jpg">
         </div>
         {% endfor %}
 
