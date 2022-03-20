@@ -29,7 +29,7 @@ def render_menu_page():
     con = create_connection(DB_NAME)
 
     # select the things you want from the table
-    query = 'SELECT name, description, volume, price, image FROM products'
+    query = 'SELECT name, description, volume, price, image FROM product'
 
     cur = con.cursor()
     cur.execute(query)
@@ -42,6 +42,16 @@ def render_menu_page():
 @app.route('/Contact')
 def render_contact_page():
     return render_template('Contact.html')
+
+
+@app.route('/Login')
+def render_login_page():
+    return render_template('login.html')
+
+
+@app.route('/signup')
+def render_signup_page():
+    return render_template('signup.html')
 
 
 app.run(host='0.0.0.0')
