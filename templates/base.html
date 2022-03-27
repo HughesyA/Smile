@@ -16,11 +16,19 @@
         <a href="/Menu">Menu |</a>
         <a href="/"> Home |</a>
         <a href="/Contact"> Contact |</a>
+        {% if logged_in %}
+        <a href="/logout"> Log out</a>
+        {% else %}
         <a href="/Login"> Log in</a>
+        {% endif %}
     </nav>
 </div>
-<script src="js/script.js"></script>
+
     <main>
+        {% if logged_in %}
+        <strong>Hello, {{ session.firstname }}</strong>
+        {% endif %}
+
         {% block main %}
         {% endblock %}
     </main>
